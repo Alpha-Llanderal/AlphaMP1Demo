@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  --primary: #101010f3;
+  --secondary: #730000;
+  --dark: #000;
+  --light: #f4efea;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  scroll-behavior: smooth;
+  background:transparent;
+}
+
+/* NAVIGATION SECTION */
+.navbar {
+  width: 100%;
+}
+
+.nav-link {
+  margin-right: 20px; /* Space between the links */
+  color: white; /* Color of the links */
+  font-weight: bold;  /* Make navigation links bold */
+}
+
+.nav-link:hover {
+  color: #730000; /* Color when hovering over the link */
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: "League Spartan", Helvetica, sans-serif;
+}
+
+/* HOME SECTION */
+#home {
+  color: white;
+  text-shadow: 1px 1px 2px black; /* Enhances text visibility against backgrounds */
+}
+
+#home h1 {
+  font-size: 4rem;
+  margin-bottom: 0.5em;
+}
+
+#home p {
+  font-size: 1.5rem;
+  margin-bottom: 2em;
+}
+
+/* connect */
+.connect form {
+  width: 500px;
+  max-width: 100%;
+  position: relative;
+}
+
+/* Enter Your Email */
+.connect form input:first-child {
+  display: inline-block;
+  width: 100%;
+  padding: 14px 130px 14px 15px;
+  border: 2px solid white;
+  outline: none;
+  border-radius: 30px;
+}
+
+/* Let's Connect */
+.connect form input:last-child {
+  position: absolute;
+  display: inline-block;
+  outline: none;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 30px;
+  color: white;
+  box-shadow: 0px 0px 15px #000, 0px 0px 15px #858585;
+  top: 6px;
+  right: 6px;
+  font-weight: bold
+  
+}
+
+.btn-danger {
+  border-radius: 20px;
+}
+
+/* ABOUT SECTION */
+#about {
+  background-color: #2a2a2a;
+}
+
+#about img {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+#about h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#about h4 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+#about .btn {
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    font-weight: bold
+}
+
+/* PROJECT SECTION */
+#projects {
+  background-color: #2a2a2a;
+}
+
+#projects h2{
+color: white;
+}
+
+#projects .card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#projects .card-img-top {
+    border-radius: 0;
+}
+
+#projects .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+#projects .card-text {
+    font-size: 1rem;
+}
+
+.btn-danger {
+  color: white;
+  background-color: #dc3545; /* Bootstrap's standard red color */
+  border-color: #dc3545;
+}
+
+.btn-danger:hover {
+  color: white;
+  background-color: #c82333; /* A slightly darker red on hover */
+  border-color: #bd2130;
+}
+
+/* SKILLS SECTION */
+#skills{
+  background-color: #2a2a2a;
+}
+
+#skills h2{
+color: white;
+}
+
+#skills img {
+    height: 100px; 
+    width: auto;
+}
+
+#skills h4 {
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+#skills p {
+    font-size: 20px;
+    color: white;
+}
+
+/* WORK HISTORY SECTION */
+#work{
+  background-color: #2a2a2a;
+}
+
+#work h2{
+  color: white;
+  }
+
+.timeline {
+  margin: 0 auto;
+  max-width: 750px;
+  padding: 25px;
+  display: grid;
+  grid-template-columns: 1fr 3px 1fr;
+  font-family: "Fira Sans", sans-serif;
+  color: #ffffff;
+}
+
+.timeline__component {
+  margin: 0 20px 20px 20px;
+}
+
+.timeline__component--bg {
+  padding: 1.5em;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.timeline__component--bottom {
+  margin-bottom: 0;
+}
+
+.timeline__middle {
+  position: relative;
+  background: #ffffff;
+}
+
+.timeline__point {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 15px;
+  height: 15px;
+  background: #ffffff;
+  border-radius: 50%;
+}
+
+.timeline__point--bottom {
+  top: initial;
+  bottom: 0;
+}
+
+.timeline__date--right {
+  text-align: right;
+}
+
+.timeline__title {
+  margin: 0;
+  font-size: 1.15em;
+  font-weight: bold;
+}
+
+.timeline__paragraph {
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+/* SKILLS SECTION */
+#skills img {
+    height: 100px; 
+    width: auto;
+}
+#skills h4 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+#skills p {
+    font-size: 14px;
+    color: white;
+}
+
+/* Contact Me */
+.contact_me {
+    width: 100%;
+    height: 500px;
+    background: #2a2a2a;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  /* Crafting Digial Masterpieces */
+  .contact_me p {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 25px;
+  }
+  
+  #contact-me {
+    background-color: #f4f4f4;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+#contact-me .form-group {
+    margin-bottom: 15px;
+}
+
+#contact-me label {
+    display: inline-flexbox;
+    margin-bottom: 5px;
+}
+
+#contact-me input[type="text"],
+#contact-me input[type="email"],
+#contact-me textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+#contact-me textarea {
+    height: 100px; /* Adjust height based on design preference */
+}
+
+#contact-me .btn {
+    background-color: #c82333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+    display: block;
+}
+
+#contact-me .btn:hover {
+    background-color: #555;
+}
+
+  /* This section is for "merged" contact me, social and footer" */
+  
+  /* Hire Me Button */
+  .contact_me .button_two:hover {
+    background-color: transparent;
+    border: 2px solid;
+    cursor: pointer;
+  }
+  
+  footer {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background: #2a2a2a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Click on any of the links to connect */
+  .footer {
+    background-color: #2a2a2a;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer p {
+    margin-bottom: 10px;
+}
+
+.social-links {
+    font-size: 40px; /* to adjust the size of icons */
+}
+
+.social-icon {
+    color: #c82333; 
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-icon:hover {
+    color: #c82333; /* Darker shade for hover effect */
+}
+  
+  /* Copyright 2024 © by Alpha Llanderal */
+  .end {
+    position: absolute;
+    color: #c82333;
+    bottom: 5px;
+    font-size: 14px;
+  }

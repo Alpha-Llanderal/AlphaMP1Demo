@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alpha's Portfolio Website</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+
+
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+<!--- Hero and Navigation Section --->
+<nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#home">
+            <img src="img/about/logo.png" alt="Alpha" width="250">
+        </a>
+        <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbar"
+            >
+              <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div id="navbar" class="collapse navbar-collapse text-end">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#work">Work History</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!--- Home Section --->
+<section id="home" class="d-flex align-items-center justify-content-center text-left" style="height: 100vh; background-image: url('img/background2.jpg'); background-size: cover; background-position: center;">
+    <div class="container">
+        <p>Hello! My name is</p>
+        <h1>Alpha Llanderal</h1>
+        <p>I'm an aspiring web developer.</p>
+        
+        <!--- Connect --->
+        <div class="connect">
+            <form>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter Your Email"
+              />
+              <input type="submit" name="submit" class="btn btn-danger" value="Let's Connect" />
+            </form>
+    </div>
+</section>
+
+<!--- About Section --->
+<section id="about" class="d-flex align-items-center justify-content-center vh-100 text-white">
+        <div class="container text-center text-md-start">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="img/about/alpha.JPG" alt="Personal Picture" class="img-fluid rounded-circle">
+                </div>
+                <div class="col-md-8">
+                    <h1>About Me</h1>
+                    <h4>Aspiring Web Developer</h4>
+                    <p>
+                        As a Web Developer transitioning from a <strong>Team Manager</strong> stong role with <strong>8+ years of experience</strong>, I bring a strong set of transferable skills and qualities to this new career path. My background in <strong>leadership</strong>, <strong>project management</strong>, and <strong>customer success</strong> has honed my <strong>adaptability</strong>, <strong>planning</strong>, and <strong>organizational abilities</strong>. With strong <strong>1analytical skills</strong>, <strong>critical thinking</strong>, and <strong>problem-solving capabilities</strong>, I am confident in my ability to excel in <strong>web development</strong>. I am eager to apply my expertise to create effective and innovative <strong>web solutions</strong>, contribute to successful projects, and grow professionally in the field of <strong>web development</strong>.
+                    </p>
+                    <a href="#" class="btn btn-danger">Let's Talk</a>
+                </div>
+            </div>
+        </div>
+</section>
+
+<!--- Projects Section --->
+<section id="projects" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5 mt-5">Projects</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/projects/kodeledger.jpg" class="card-img-top" alt="Kodeledger">
+                    <div class="card-body">
+                        <h5 class="card-title">Kodeledger</h5>
+                        <p class="card-text text-justify">A fictitious website created using HTML and CSS.</p>
+                        <a href="https://regal-licorice-792904.netlify.app/" target="_blank" class="btn btn-danger">Visit Website</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/projects/kodenews.jpg" class="card-img-top" alt="Kodenews">
+                    <div class="card-body">
+                        <h5 class="card-title">Kodenews</h5>
+                        <p class="card-text text-justify">A fictitious website created using HTML and CSS</p>
+                        <a href="https://kodenewschris.netlify.app/" target="_blank"
+                       class="btn btn-danger">Visit Website</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/projects/koderesto.jpg" class="card-img-top" alt="Koderesto">
+                    <div class="card-body">
+                        <h5 class="card-title">Koderesto</h5>
+                        <p class="card-text text-justify">A fictitious website using HTML, CSS, and Bootstrap</p>
+                        <a href="https://koderestowd103p.netlify.app/" target="_blank"
+                        class="btn btn-danger">Visit Website</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--- Skills Section --->
+<section id="skills" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5 mt-5">Skills</h2>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <img src="img/icons/html.jpg" alt="HTML" class="img-fluid mb-2">
+                <h4>HTML</h4>
+                <p>HTML is the standard markup language for creating web pages.</p>
+
+            </div>
+            <div class="col-md-4">
+                <img src="img/icons/css.jpg" alt="CSS" class="img-fluid mb-2">
+                <h4>CSS</h4>
+                <p>CSS styles and layouts web pages to improve their visual presentation.</p>
+
+            </div>
+            <div class="col-md-4">
+                <img src="img/icons/bootstrap.jpg" alt="Bootstrap" class="img-fluid mb-2">
+                <h4>Bootstrap</h4>
+                <p>Bootstrap is a responsive framework for developing mobile-first web application</p>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--- Work History Section --->
+<section id="work" class="py-5">
+    <div class="about-header">
+        <h2 class="text-center mb-5 mt-5">Work History</h2>
+    </div>
+    <!-- CSM -->
+    <div class="timeline">
+        <div class="timeline__component">
+          <div class="timeline__date timeline__date--right">August 2023 - Present</div>
+        </div>
+        <div class="timeline__middle">
+          <div class="timeline__point"></div>
+        </div>
+        <div class="timeline__component timeline__component--bg">
+          <h2 class="timeline__title">Customer Success Manager - New York City</h2>
+          <p class="timeline__paragraph">
+            Ensures clients achieve success with products/services, focusing on satisfaction, retention, and growth through proactive support and guidance.
+          </p>
+        </div>
+
+        <!-- AHCIL -->
+        <div class="timeline__component timeline__component--bg">
+          <h2 class="timeline__title">Sales and Marketing Representative - AHCIL Laboratories - Cebu City</h2>
+          <p class="timeline__paragraph">
+            Promotes organic fertilizers and disinfectants, educating customers, driving sales, and building relationships to achieve growth objectives.
+          </p>
+        </div>
+        <div class="timeline__middle">
+          <div class="timeline__point"></div>
+        </div>
+        <div class="timeline__component">
+          <div class="timeline__date">June 2022 - Present</div>
+        </div>
+
+        <!-- TMHS -->
+        <div class="timeline__component">
+          <div class="timeline__date timeline__date--right">August 2015 — August 2023</div>
+        </div>
+        <div class="timeline__middle">
+          <div class="timeline__point"></div>
+        </div>
+        <div class="timeline__component timeline__component--bg">
+          <h2 class="timeline__title">Team Manager/Executive Assistant - Advanced Integrative LLC - California</h2>
+          <p class="timeline__paragraph">
+            Coordinates schedules, manages communications, and supports administrative tasks to ensure efficient operations and team productivity.
+          </p>
+        </div>
+
+        <!-- ACCUPOINT -->
+        <div class="timeline__component timeline__component--bg">
+            <h2 class="timeline__title">Implementation Specialist - Accupoint - New Jersey</h2>
+            <p class="timeline__paragraph">
+            Oversees the setup, configuration, and integration of electronic health records systems to optimize healthcare operations.
+            </p>
+          </div>
+          <div class="timeline__middle">
+            <div class="timeline__point"></div>
+          </div>
+          <div class="timeline__component">
+            <div class="timeline__date">October 2016 — June 2023</div>
+          </div>
+
+        <!-- BITTEN -->
+        <div class="timeline__component">
+            <div class="timeline__date timeline__date--right">October 2016 — June 2023</div>
+          </div>
+          <div class="timeline__middle">
+            <div class="timeline__point"></div>
+          </div>
+          <div class="timeline__component timeline__component--bg">
+            <h2 class="timeline__title">Executive Assistant - Bitten Goodfoods - Canberra</h2>
+            <p class="timeline__paragraph">
+              Supports administrative tasks, coordinates operations, manages schedules, and assists with customer relations and logistics.
+            </p>
+          </div>
+
+        <!-- BITTEN -->   
+        <div class="timeline__component timeline__component--bottom timeline__component--bg">
+          <h2 class="timeline__title">Freelancer - Various Online Platfroms</h2>
+          <p class="timeline__paragraph">
+            Worked as Team Manager, Ebay/Shopify Store Manager, SEO, Data Entry, Research, etc.
+          </p>
+        </div>
+        <div class="timeline__middle">
+          <div class="timeline__point"></div>
+          <div class="timeline__point timeline__point--bottom"></div>
+        </div>
+        <div class="timeline__component timeline__component--bottom">
+          <div class="timeline__date">July 2010 — August 2015</div>
+        </div>
+      </div>
+</section>
+
+<!--- Contact Me --->
+<div class="contact_me">
+    <p>Crafting Digital Masterpieces.</p>
+
+    <section id="contact-me">
+        <form action="submit-form-handler.php" method="POST">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" id="email" name="email" placeholder="Email address" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Message" required></textarea>
+            </div>
+            <button type="submit" class="btn">Let' Talk</button>
+        </form>
+    </section>
+         
+  </div>
+
+      <!--- Footer --->
+      <footer class="footer">
+        <div class="container text-center">
+            <p>Click on any of the links to connect</p>
+            <div class="social-links">
+                <a href="https://www.facebook.com/madelynjuan5" class="social-icon" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/madelynjuan5" class="social-icon" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://github.com/Alpha-Llanderal" class="social-icon" aria-label="github">
+                    <i class="fab fa-github"></i> 
+                </a>
+                <a href="https://www.linkedin.com/in/alpha-llanderal" class="social-icon" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+        </div>
+        <p class="end">Copyright 2024 &copy; by Alpha Llanderal</p>
+    </footer>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
